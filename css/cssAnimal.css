@@ -1,0 +1,219 @@
+*{box-sizing: border-box;}
+
+
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header{
+	width: 100vw; /* The difference between using width: 100vw instead of width: 100% is that while 100% will make the element fit all the space available, the viewport width has a specific measure, in this case the width of the available screen, including the document margin.*/
+	height: 100vh;
+	background-image: url(../img/background.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: block;
+	background-repeat: no-repeat;
+  
+}
+
+a {
+  color: white;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav{
+  width: 100%;
+  /*padding: 0 20px;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: trasparent;
+}
+
+#nav.black{
+  background: black;
+}
+
+.logo{
+	position: relative;
+	float: left;
+	width: 215px;
+}
+
+.navbar_menu{
+  position: relative;
+  float: right;
+}
+
+.navbar_menu li{
+  padding: 10px 15px;
+  font-weight: lighter;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.navbar_menu li:before,
+.navbar_menu li:after{
+  position: absolute;
+  transition: all 0.4s ease;
+  bottom: 0;
+  left: -100%;
+  width: 50%;
+  height: 1px;
+  background: white;
+  content: '';
+  z-index: -1;
+}
+
+
+ul{
+  list-style-type: none;
+  padding: 5px;
+}
+
+li{
+  display: inline-block;
+}
+.header_left{
+    color: white;
+}
+.header_left{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  width: 300px;
+  padding: 0.8rem;
+}
+
+h1{
+  font-size: 3rem;
+  letter-spacing: -4px;
+  color: white;
+}
+
+.header_left p{
+  font-size: 0.6rem;
+  color: white;
+}
+
+button{
+    background: #E6A700;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 2%;
+  flex-direction: row;
+  background: #28787d;
+  text-align: center;
+}
+.fri{
+	background:#E6A700;
+
+}
+.sec{
+    text-align: center;
+    background: white;
+    
+}
+.thr{
+  background: black;
+  color: white;
+  text-align: left;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.col-12{
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.col-3{
+  width: 25%;
+  padding: 2rem;
+}
+
+.col-3 h3{
+  color: var(--secondary-color);
+}
+
+.col-3 img{
+  width: 90px;
+  height: 90px;
+}
+
+.number{
+  padding: 0.5rem;
+  background: #E6A700;
+  color: white;
+  width: 40px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.number:before{
+  width: 400%;
+  height: 1px;
+  background: #E6A700;
+
+  position: absolute;
+  top: 50%;
+  left: -150%;
+  transform: translateY(-50%);
+  content: '';
+  z-index: -1;
+}
+
+.ci{
+	z-index: 2;
+}
+
+footer .col-6{
+	width: 42%;
+	padding: 2%;
+	margin-left: 5%;
+}
+
+footer .col-3 {
+  width: 25%;
+}
+
+h4{
+margin-top: 8%;
+}
+
+
+/*.vvv{
+	width: 100vw;  The difference between using width: 100vw instead of width: 100% is that while 100% will make the element fit all the space available, the viewport width has a specific measure, in this case the width of the available screen, including the document margin.
+	height: 100vh;
+	background-image: url(../img/background.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	display: block;
+	background-repeat: no-repeat;
+} */
